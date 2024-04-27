@@ -82,7 +82,7 @@ main{
     background-color: rgba(80, 77, 77, 0.116);
 }
 
-.Card:active, .Card:focus .Card:hover{
+.Card:active{
     p{
         display: none;
     }
