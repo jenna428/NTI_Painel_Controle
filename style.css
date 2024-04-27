@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Kode+Mono:wght@400..700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -34,7 +36,6 @@ header > img{
 
 }
 
-
 main{
     background-color: white;
     margin: auto;
@@ -46,12 +47,11 @@ main{
     border-bottom-right-radius: 15px;
 }
 
-h2{
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2em;
+.Cards{
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 1.5rem;
 }
 
 .Card{
@@ -65,32 +65,6 @@ h2{
     padding: 1rem;
 }
 
-.Cards{
-    display: grid;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 1.5rem;
-}
-
-.Card:hover{
-    transform: scale(1.01);
-    background-color: rgba(46, 43, 43, 0.226);
-}
-
-p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3em;
-    width: 360px;
-    margin: auto;
-}
-
-img{
-    width: 180px;
-    height: 180px;
-    margin: 20px;
-    border-radius: 15px;
-}
-
 @media (min-width: 400px) {
     .Cards { grid-template-columns: repeat(1, 1fr); }
 }
@@ -101,6 +75,67 @@ img{
 
 @media (min-width: 1200px) {
     .Cards { grid-template-columns: repeat(3, 1fr); }
+}
+
+.Card:hover{
+    transform: scale(1.01);
+    background-color: rgba(80, 77, 77, 0.116);
+    p{
+        display: none;
+    }
+    ul{
+        display: block;
+    }
+}
+
+img{
+    width: 180px;
+    height: 180px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+h2{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+}
+
+p{
+    font-family: 'Ubuntu';
+    font-size: 1.3em;
+    width: 360px;
+    margin: auto;
+}
+
+ul{
+    border: solid rgba(0, 0, 0, 0.08) 1px;
+    margin: auto;
+    border-radius: 15px;
+    list-style-type: none;
+    display: none;
+}
+
+li{
+    padding: 10px;
+}
+
+nav a{
+    font-family: 'Kode Mono', Courier, monospace;
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: black;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 6px;
+    margin: 2px;
+}
+
+nav a:hover{
+    background-color: #25252523;
 }
 
 footer{
