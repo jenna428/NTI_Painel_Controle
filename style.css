@@ -80,12 +80,103 @@ main{
 .Card:hover{
     transform: scale(1.01);
     background-color: rgba(80, 77, 77, 0.115);
-    p{
-        display: none;
+    button{
+        background-color: rgba(80, 77, 77, 0.115);
     }
-    ul{
-        display: block;
+    button:hover{
+        background-color: rgba(0, 132, 255, 0.233);
     }
+}
+ 
+button{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    font-family: 'Kode Mono', Courier, monospace;
+    font-size: 1em;
+    font-weight: bolder;
+    background-color: aliceblue;
+}
+
+.janela-modal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #25252560;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal{
+    width: 20%;
+    min-width: 450px;
+    min-height: 200px;
+    background-color: #ffffff54;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.modal > ul{
+    list-style-type: circle;
+}
+
+ul > li{
+    padding: 10px;
+    font-size: 1.5em;
+}
+.modal > h1{
+    color: #252525;
+    padding-bottom: 15px;
+}
+li > a{
+    text-decoration: none;
+    color: #252525;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+li > a:hover{
+    color: gray;
+}
+
+.fechar{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(26, 100, 238);
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.janela-modal.abrir{
+    display: flex;
+}
+
+@keyframes abrirmodal {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -20px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.abrir .modal{
+    animation: abrirmodal 0.5s;
 }
 
 img{
@@ -108,34 +199,6 @@ p{
     font-size: 1.3em;
     width: 360px;
     margin: auto;
-}
-
-ul{
-    border: solid rgba(0, 0, 0, 0.08) 1px;
-    margin: auto;
-    border-radius: 15px;
-    list-style-type: none;
-    display: none;
-}
-
-li{
-    padding: 10px;
-}
-
-nav a{
-    font-family: 'Kode Mono', Courier, monospace;
-    font-size: 1.2em;
-    font-weight: bolder;
-    color: black;
-    font-size: 1.1em;
-    text-decoration: none;
-    border-radius: 10px;
-    padding: 6px;
-    margin: 2px;
-}
-
-nav a:hover{
-    background-color: #25252523;
 }
 
 footer{

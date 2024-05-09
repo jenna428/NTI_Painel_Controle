@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="javas.js"></script>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <title>.::Painel de Controle</title>
 </head>
@@ -13,21 +14,14 @@
         <img src="imagens/facape.png" alt="logo facape">
     </header>
     <main>
+        
         <!--<h2>Painel de Controle</h2>-->
         <div class="Cards">
             <div class="Card">
                 <img src="imagens/pfsense-logo-cor.png" draggable="false" alt="logo pfsense">
                 <h2>pfSense</h2>
                 <p>O pfSense é open source, licenciado sob BSD license, baseado FreeBSD e adaptado para assumir o papel de um firewall e/ou roteador de redes.</p>
-                
-                <nav>
-                    <ul>
-                        <li><a href="#" target="_blank">Alunos</a></li>
-                        <li><a href="#" target="_blank">Sistema</a></li>
-                        <li><a href="#" target="_blank">Laboratórios</a></li>
-                    </ul>
-                </nav>
-
+                <button onclick="abrir()" class="pfsense">Acessar</button>
             </div>
             <div class="Card">
                 <img src="imagens/zabbix-logo-cor.png" draggable="false" alt="logo zabbix">
@@ -52,13 +46,24 @@
             <div class="Card">
                 <img src="imagens/velocimetro.png" draggable="false" alt="logo velocimetro">
                 <h2>Velocimetro</h2>
-                <p>Medir o desempenho da rede local da Facape, teste local de velocidade Download e Upload entre os terminais de acesso e servidores principais.</p>
-                <nav><ul><li><a href="https://www.speedtest.net/pt" target="_blank">Acessar</a></li></ul></nav>
+                <p>Medir o desempenho da rede local, teste local de velocidade Download e Upload entre os terminais de acesso e servidores principais.</p>
+                <a href="https://www.speedtest.net/pt" target="_blank"><button>Acessar</button></a>
             </div>
         </div>
     </main>
     <footer>
         Faculdade de Petrolina - <a href="http://facape.br/" target="_blank">FACAPE</a><br>Núcleo de Tecnologia da Informação - <a href="http://nti.facape.br/nti.html" target="_blank">NTI</a><br><br>&copy Copyright 2024</footer>
     </footer>
+    <div class="janela-modal" id="janela-modal">
+        <div class="modal">
+            <button class="fechar" id="fechar">X</button>
+            <h1>Pfsense</h1>
+            <ul>
+                <li><a href="#">Pfsense_Alunos</a></li>
+                <li><a href="#">Pfsense_Sistema</a></li>
+                <li><a href="#">Pfsense_Laboratórios</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
