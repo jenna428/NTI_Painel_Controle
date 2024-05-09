@@ -7,10 +7,6 @@ function abrir(op){
 
     if (op == 'pfsense') {
         conteudo.innerHTML = '<button class="fechar" id="fechar">&times</button><h1>Pfsense</h1><ul><li><a href="#">Pfsense_Alunos</a></li><li><a href="#">Pfsense_Sistema</a></li><li><a href="#">Pfsense_Laboratórios</a></li></ul>';
-    }else if (op == 'zabbix'){
-        conteudo.innerHTML = '<button class="fechar" id="fechar">&times</button><h1>Zabbix</h1><ul><li><a href="#">Zabbix_1</a></ul>';
-    }else if (op == 'ruckus'){
-        conteudo.innerHTML = '<button class="fechar" id="fechar">&times</button><h1>Ruckus</h1><ul><li><a href="#">Ruckus_1</a></ul>';
     }else if (op == 'radius'){
         conteudo.innerHTML = '<button class="fechar" id="fechar">&times</button><h1>DaloRADIUS</h1><ul><li><a href="#">DaloRADIUS_1</a></li><li><a href="#">DaloRADIUS_2</a></li><li><a href="#">DaloRADIUS_3</a></li><li><a href="#">DaloRADIUS_4</a></li></ul>';
     }else if (op == 'freeradius'){
