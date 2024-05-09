@@ -14,34 +14,37 @@
         <img src="imagens/facape.png" alt="logo facape">
     </header>
     <main>
-        
         <!--<h2>Painel de Controle</h2>-->
         <div class="Cards">
             <div class="Card">
                 <img src="imagens/pfsense-logo-cor.png" draggable="false" alt="logo pfsense">
                 <h2>pfSense</h2>
                 <p>O pfSense é open source, licenciado sob BSD license, baseado FreeBSD e adaptado para assumir o papel de um firewall e/ou roteador de redes.</p>
-                <button onclick="abrir()" class="pfsense">Acessar</button>
+                <button onclick="abrir('pfsense')">Acessar</button>
             </div>
             <div class="Card">
                 <img src="imagens/zabbix-logo-cor.png" draggable="false" alt="logo zabbix">
                 <h2>Zabbix</h2>
-                <p>O Zabbix é uma ferramenta de software open source, para monitorar a infraestrutura de TI, como redes, servidores, máquinas virtuais e serviços em nuvem.</p>
+                <p>O Zabbix serve para monitorar a infraestrutura de TI, como redes, servidores, máquinas virtuais e serviços em nuvem.</p>
+                <button onclick="abrir('zabbix')">Acessar</button>
             </div>
             <div class="Card">
                 <img src="imagens/ruckus-logo.png" draggable="false" alt="logo ruckus">
                 <h2>Ruckus</h2>
                 <p>RUCKUS WIRELESS é uma marca de software e equipamentos de rede com e sem fio de propriedade da CommScope.</p>
+                <button onclick="abrir('ruckus')" >Acessar</button>
             </div>
             <div class="Card">
                 <img src="imagens/daloradius-logo-cor_2.png" draggable="false" alt="logo dalo radius">
                 <h2>DaloRADIUS</h2>
                 <p>DaloRADIUS é uma plataforma web RADIUS avançada destinada ao gerenciamento de hotspots e implantações de ISP de uso geral.</p>
+                <button onclick="abrir('radius')" >Acessar</button>
             </div>
             <div class="Card">
                 <img src="imagens/Freeradius-logo-cor.png" draggable="false" alt="logo freeradius">
                 <h2>FreeRADIUS</h2>
-                <p>FreeRADIUS é um servidor de RADIUS em código, que provê autenticação, autorização e contabilidade.</p>
+                <p>FreeRADIUS é o mais amplo servidor de RADIUS em código livre do mundo, que provê autenticação, autorização e contabilidade.</p>
+                <button onclick="abrir('freeradius')">Acessar</button>
             </div>
             <div class="Card">
                 <img src="imagens/velocimetro.png" draggable="false" alt="logo velocimetro">
@@ -55,15 +58,9 @@
         Faculdade de Petrolina - <a href="http://facape.br/" target="_blank">FACAPE</a><br>Núcleo de Tecnologia da Informação - <a href="http://nti.facape.br/nti.html" target="_blank">NTI</a><br><br>&copy Copyright 2024</footer>
     </footer>
     <div class="janela-modal" id="janela-modal">
-        <div class="modal">
-            <button class="fechar" id="fechar">X</button>
-            <h1>Pfsense</h1>
-            <ul>
-                <li><a href="#">Pfsense_Alunos</a></li>
-                <li><a href="#">Pfsense_Sistema</a></li>
-                <li><a href="#">Pfsense_Laboratórios</a></li>
-            </ul>
+        <div class="modal" id="modal">
         </div>
     </div>
 </body>
 </html>
+
